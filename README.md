@@ -97,30 +97,3 @@ Training Pipeline
 #### Cells 5-8: Analysis and visualization
 
 
-## Results
-
-### Performance Comparison
-| Metric | YOLOv5 Baseline | YOLOv8s (Ours) | Improvement |
-|--------|----------------|----------------|-------------|
-| mAP@0.5 | 0.480 | **0.52** | **+8.3%** |
-| mAP@0.5:0.95 | 0.385 | **0.41** | **+6.5%** |
-| Precision | 0.850 | **0.89** | **+4.7%** |  
-| Recall | 0.800 | 0.78 | -2.5% |
-| F1-Score | 0.824 | **0.83** | **+0.7%** |
-| Parameters | 13.5M | **11.2M** | **-17%** |
-| Model Size | 27.0MB | **21.5MB** | **-20%** |
-| Inference Time | 6.3ms | **5.5ms** | **-12.7%** |
-
-### Key Achievements
-- **Environmental Robustness**: Consistent performance across urban settings, forest canopies, and varied lighting conditions
-- **Detection Confidence**: Mean confidence scores of 0.81 (controlled), 0.75 (challenging), 0.80 (minimal context)
-- **Training Convergence**: Stable convergence by epoch 100 with minimal overfitting
-- **Real-time Capability**: 30+ FPS processing with batch inference
-- **Precision-Recall AUC**: 0.867, confirming strong discriminative capability
-
-### Generated Outputs
-- Training progress visualization (loss curves, mAP progression, learning rate schedule)
-- Precision-Recall curve with AUC = 0.867
-- Model comparison charts
-- Detection examples on test images with confidence scores
-- Dataset distribution analysis
